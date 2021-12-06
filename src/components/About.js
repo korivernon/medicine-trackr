@@ -17,7 +17,7 @@ export default function About() {
       <Card.Text>
         *Summary*
       </Card.Text>
-      <Card.Link href="#">Github Link</Card.Link>
+      <Card.Link href="https://github.com/korivernon/medicine-trackr">Github Link</Card.Link>
     
     </Card.Body>
   </Card>

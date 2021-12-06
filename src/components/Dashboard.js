@@ -21,6 +21,8 @@ export default function Dashboard() {
 
   return (
     <>
+    <h1>Welcome back</h1>
+    <br></br>
       <Card>
         <Card.Body>
           <h2 className="text-center mb-4">Profile</h2>
@@ -34,6 +36,13 @@ export default function Dashboard() {
       <div className="w-100 text-center mt-2">
         <Button variant="link" onClick={handleLogout}>
           Log Out
+        </Button>
+      <br></br>
+        <Button href='/add-medication'>
+            Add Medication
+        </Button>{'  '}
+        <Button href='my-medications'>
+            My Medications
         </Button>
       </div>
     </>

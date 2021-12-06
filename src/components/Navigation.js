@@ -29,6 +29,7 @@ export default function Navigation() {
         <Nav.Link href="/about">About</Nav.Link>
         {currentUser ? 
         <NavDropdown title="Account" id="collasible-nav-dropdown">
+            <NavDropdown.Item href="/my-medications">My Medications</NavDropdown.Item>
           <NavDropdown.Item href="/add-medication">Add Medication</NavDropdown.Item>
           <NavDropdown.Item href="/update-profile">Update Profile</NavDropdown.Item>
           <NavDropdown.Item onClick={handleLogout}>Logout</NavDropdown.Item>

@@ -7,6 +7,7 @@ import Add from "./Add"
 import About from "./About"
 import Dashboard from "./Dashboard"
 import Login from "./Login"
+import Medications from "./Medications"
 import Navigation from "./Navigation"
 import PrivateRoute from "./PrivateRoute"
 import ForgotPassword from "./ForgotPassword"
@@ -33,6 +34,7 @@ function App() {
               <Route path="/signup" component={Signup} />
               <Route path="/about" component={About} />
               <Route path="/login" component={Login} />
+              <Route path="/my-medications" component={Medications} />
               <Route path="/forgot-password" component={ForgotPassword} />
             </Switch>
           
