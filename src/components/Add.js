@@ -31,7 +31,9 @@ export default function Add() {
   return (
     <>
       <Card>
+        
         <Card.Body>
+        <Card.Title>Add a Medication</Card.Title>
         <Form onSubmit={handleSubmit}>
   <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>Medicine Name</Form.Label>
@@ -39,9 +41,24 @@ export default function Add() {
   </Form.Group>
 
   <Form.Group className="mb-3" controlId="formBasicPassword">
+    <Form.Label>Medicine Notes and Purpose</Form.Label>
+    <Form.Control type="text" placeholder="Notes" required/>
+  </Form.Group>
+
+  <Form.Group className="mb-3" controlId="formBasicPassword">
     <Form.Label>Medicine Interval</Form.Label>
     <Form.Control type="number" placeholder="Interval" required/>
   </Form.Group>
+
+  <Form.Group className="mb-3" controlId="formBasicPassword">
+    <Form.Label>Prescriber</Form.Label>
+    <Form.Control type="text" placeholder="Interval" required/>
+  </Form.Group>
+
+  <Form.Group className="mb-3" controlId="formBasicCheckbox">
+    <Form.Check type="checkbox" label="SMS Notifications"/>
+  </Form.Group>
+
   <Form.Group className="mb-3" controlId="formBasicCheckbox">
     <Form.Check type="checkbox" label="Has Conflict?" onChange={handleChange.bind(this)}/>
   </Form.Group>

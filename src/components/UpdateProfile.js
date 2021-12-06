@@ -48,6 +48,20 @@ export default function UpdateProfile() {
           <h2 className="text-center mb-4">Update Profile</h2>
           {error && <Alert variant="danger">{error}</Alert>}
           <Form onSubmit={handleSubmit}>
+          <Form.Group id="name">
+              <Form.Label>Name</Form.Label>
+              <Form.Control
+                type="text"
+                defaultValue="Kori Vernon"
+              />
+            </Form.Group>
+            <Form.Group id="phone">
+              <Form.Label>Phone/SMS</Form.Label>
+              <Form.Control
+                type="text"
+                defaultValue="(919) 410-2217"
+              />
+            </Form.Group>
             <Form.Group id="email">
               <Form.Label>Email</Form.Label>
               <Form.Control

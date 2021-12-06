@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { useAuth } from "../contexts/AuthContext"
 import { Nav, Navbar, NavDropdown, Container } from "react-bootstrap"
 import { useHistory } from "react-router-dom"
+import { MedicationRibbon } from "./MedicationRibbon"
 
 export default function Navigation() {
   const [error, setError] = useState("")
@@ -25,7 +26,7 @@ export default function Navigation() {
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="me-auto">
-        <Nav.Link href="/">Dashboard</Nav.Link>
+        {/* <Nav.Link href="/">Dashboard</Nav.Link> */}
         <Nav.Link href="/add-medication">Add Medication</Nav.Link>
         <Nav.Link href="/about">About</Nav.Link>
         {currentUser ? 
