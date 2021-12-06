@@ -26,10 +26,11 @@ export default function Navigation() {
     <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="me-auto">
         <Nav.Link href="/">Dashboard</Nav.Link>
+        <Nav.Link href="/add-medication">Add Medication</Nav.Link>
         <Nav.Link href="/about">About</Nav.Link>
         {currentUser ? 
         <NavDropdown title="Account" id="collasible-nav-dropdown">
-          <NavDropdown.Item href="/add-medication">Add Medication</NavDropdown.Item>
+          <NavDropdown.Item href="/profile-settings">View Profile</NavDropdown.Item>
           <NavDropdown.Item href="/update-profile">Update Profile</NavDropdown.Item>
           <NavDropdown.Item onClick={handleLogout}>Logout</NavDropdown.Item>
          

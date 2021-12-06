@@ -5,12 +5,13 @@ import { AuthProvider } from "../contexts/AuthContext"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import Add from "./Add"
 import About from "./About"
-import Dashboard from "./Dashboard"
+import ProfileSettings from "./ProfileSettings"
 import Login from "./Login"
 import Navigation from "./Navigation"
 import PrivateRoute from "./PrivateRoute"
 import ForgotPassword from "./ForgotPassword"
 import UpdateProfile from "./UpdateProfile"
+import Dashboard from "./Dashboard"
 
 function App() {
   return (
@@ -22,12 +23,13 @@ function App() {
       style={{ minHeight: "100vh" }}
     >
       
-      <div className="w-100" style={{ maxWidth: "400px" }}>
+      <div className="w-100" >
         <Router>
           
           
             <Switch>
               <PrivateRoute exact path="/" component={Dashboard} />
+              <PrivateRoute exact path="/profile-settings" component={ProfileSettings} />
               <PrivateRoute path="/update-profile" component={UpdateProfile} />
               <PrivateRoute path="/add-medication" component={Add} />
               <Route path="/signup" component={Signup} />
