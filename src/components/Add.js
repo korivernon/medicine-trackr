@@ -52,7 +52,7 @@ export default function Add() {
 
   <Form.Group className="mb-3" controlId="formBasicPassword">
     <Form.Label>Prescriber</Form.Label>
-    <Form.Control type="text" placeholder="Interval" required/>
+    <Form.Control type="text" placeholder="Prescriber" required/>
   </Form.Group>
 
   <Form.Group className="mb-3" controlId="formBasicCheckbox">
